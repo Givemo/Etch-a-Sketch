@@ -1,64 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch a Sketch</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
     <button class="button1">RESET</button>
     <button class="button2">Change Grid</button>
+    <button class="button3">Background</button>
 
-    <div class="container"></div> 
- 
-<style>
-     :root {
-         --grid-columns: 1;
-         --grid-rows: 1;
-     }
-
-     body{
-         text-align: center;
-         background-image: linear-gradient(115deg,rgba(38, 38, 163, 0.8),rgba(56, 56, 175, 0.7))
-            ,url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSazXYkqQlj8S8zeUkQX1pGdWG3suquOUQAtLdOaSFFc4Jpbnu4);
-         background-repeat: no-repeat;
-         background-position: center;
-         background-size: cover;
-     }
-
-     button, select {
-         padding: 3px;
-         margin-bottom: 30px;
-         margin-top: 10px;
-     }
-
-     .container {
-        display: grid;
-        grid-template-rows: repeat(var(--grid-rows), 1fr);
-        grid-template-columns: repeat(var(--grid-columns), 1fr );
-        width: 600px;
-        height: 600px;
-        grid-gap: .1px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        border: 3px solid #black;
-     }
-     .grid-item {
-         height: 100%;
-         width: 100%;
-         border: .5px solid #f4f4f4;
-     }
-
-     @media (max-width: 800px) {
-         .container {
-             width: 400px;
-             height: 400px;
-         }
-     }    
-
- </style>
-
- <script src="script.js"></script>
-</body>
+    <div class="container"></div>
+  </body>
 </html>
